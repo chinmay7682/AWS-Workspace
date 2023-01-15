@@ -1,3 +1,4 @@
+#Below is the required version for aws provider
 terraform {
-  required_version = "= 0.13.4"
+  required_version = "= 1.0.2"
 }

@@ -1,5 +1,5 @@
 variable "bundle_id" {
- description = "ID of the bundle to deploy workspaces as"
+  description = "ID of the bundle to deploy workspaces as"
 }
 variable "username" {
   description = "workspace username"
