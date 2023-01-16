@@ -98,3 +98,9 @@ No modules.
 | <a name="output_workspace-directory-name"></a> [workspace-directory-name](#output\_workspace-directory-name) | The name of the directory. |
 | <a name="output_workspace-id"></a> [workspace-id](#output\_workspace-id) | The workspaces ID. |
 | <a name="output_workspace-name"></a> [workspace-name](#output\_workspace-name) | The name of the WorkSpace, as seen by the operating system. |
+
+For more information on Amazon Workspaces Manual Setup, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
+
+For more information on Amazon Workspaces, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
+
+For more information on Terraform AWS Workspaces, visit [Terraform Resource: AWS Workspaces](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace).
