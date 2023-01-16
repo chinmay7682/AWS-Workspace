@@ -73,6 +73,8 @@ Now our workspace is Ready. Install AWS Workspaces client. Login using the useri
 
 Follow Step 4 in [this](https://medium.com/@vanchi811/aws-workspaces-fully-managed-virtual-desktops-for-every-worker-a16cbedeabe) document for complete steps to Login created Workspace.
 
+<img width="508" alt="image" src="https://user-images.githubusercontent.com/65828245/212747362-8d045c34-392e-43b5-ab31-c9a60f2e39db.png">
+
 ## Requirements
 
 | Name | Version |
@@ -132,7 +134,7 @@ No modules.
 | <a name="output_workspace-id"></a> [workspace-id](#output\_workspace-id) | The workspaces ID. |
 | <a name="output_workspace-name"></a> [workspace-name](#output\_workspace-name) | The name of the WorkSpace, as seen by the operating system. |
 
-For more information on Amazon Workspaces Manual Setup, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
+For more information on Amazon Workspaces Manual Setup, visit [Amazon Workspaces](https://medium.com/@vanchi811/aws-workspaces-fully-managed-virtual-desktops-for-every-worker-a16cbedeabe).
 
 For more information on Amazon Workspaces, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
 
