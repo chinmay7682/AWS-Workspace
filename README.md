@@ -61,7 +61,11 @@ ___
 
 3. Create a User by following [this](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_manage_users_groups_create_user.html) document
  Open the Active Directory Users and Computers tool. Run as a different user. Put the Active directory userid and password.
+ 
  <img width="339" alt="image" src="https://user-images.githubusercontent.com/65828245/212684126-a5f615e7-6352-425a-b8f9-48c63b841560.png">
+<img width="508" alt="image" src="https://user-images.githubusercontent.com/65828245/212688061-2cae87fe-7827-44b7-bd22-5172dd05799c.png">
+<img width="323" alt="image" src="https://user-images.githubusercontent.com/65828245/212688201-1bb460d1-88a3-4afd-b80a-4a13ba5bf8db.png">
+<img width="482" alt="image" src="https://user-images.githubusercontent.com/65828245/212688283-3ca8f68d-9671-4caf-8d6f-719556d7d647.png">
 
 
 ## Requirements
