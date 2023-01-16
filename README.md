@@ -32,9 +32,15 @@ ___
 
 <pre><code>terraform plan</pre></code>
 
+<img width="415" alt="image" src="https://user-images.githubusercontent.com/65828245/212662585-7080aaff-0731-41f2-881a-85549eab6d8e.png">
+<img width="356" alt="image" src="https://user-images.githubusercontent.com/65828245/212662914-36f02d96-470d-4640-9cbe-4a14d52f6fba.png">
+<img width="352" alt="image" src="https://user-images.githubusercontent.com/65828245/212663032-f5d70296-c9a6-40af-995b-45fdaafe69ad.png">
+
 * To execute the actions proposed in a Terraform plan:
 
 <pre><code>terraform apply</pre></code>
+
+
 
 * To destroy the infrastructure created before by using Terraform:
 
