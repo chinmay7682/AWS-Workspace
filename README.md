@@ -32,7 +32,7 @@ ___
 
 <pre><code>terraform plan</pre></code>
 
-<img width="415" alt="image" src="https://user-images.githubusercontent.com/65828245/212662585-7080aaff-0731-41f2-881a-85549eab6d8e.png">
+<img width="386" alt="image" src="https://user-images.githubusercontent.com/65828245/212667983-21d5f51c-a165-4a83-9712-f0e54621840a.png">
 <img width="356" alt="image" src="https://user-images.githubusercontent.com/65828245/212662914-36f02d96-470d-4640-9cbe-4a14d52f6fba.png">
 <img width="352" alt="image" src="https://user-images.githubusercontent.com/65828245/212663032-f5d70296-c9a6-40af-995b-45fdaafe69ad.png">
 
