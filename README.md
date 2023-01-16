@@ -1,19 +1,17 @@
-# Terraform Code repo for AWS Workspaces
+﻿# Terraform Code repo for AWS Workspaces
 
 The following resources will be created:
 
 1. A VPC 
-2. Two private subnets - One for client VPN and one for Application subnet
-3. A route table for private subnets
-4. VPN Endpoint - Provides an AWS Client VPN endpoint for OpenVPN clients.
+2. Two private subnets(To host AD and Workspaces ENI to customer VPC) and one Public subnet(For internet Access).
+3. A route table for private subnets and One Route table for Public subnets.
+4. A nat Gateway and Internet Gateway for Internet Access which Needed for workspace.
 5. Provides network associations for AWS Client VPN endpoints.
-6. A CloudWatch log group to store session logs.
-
-## Pre-requisite
-
-1. Generate server and client certificates. Store them in ACM
-2. Create a Ec2 instance in Application subnet
-
+6. A Simple Active Directory to user details.
+7. A WorkSpaces directory in AWS WorkSpaces Service.
+8. A workspace.
+9. A security group for Workspace Directory.
+10. IAM role for workspace and A KMS key.
 
 ___
 ## Terraform execution steps
@@ -52,7 +50,7 @@ ___
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.50.0 |
 
 ## Modules
 
@@ -87,16 +85,22 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_bundle_id"></a> [bundle\_id](#input\_bundle\_id) | ID of the bundle to deploy workspaces as | `any` | n/a | yes |
-| <a name="input_directory_name"></a> [directory\_name](#input\_directory\_name) | Active directory name | `any` | n/a | yes |
-| <a name="input_password"></a> [password](#input\_password) | Active directory password | `any` | n/a | yes |
-| <a name="input_username"></a> [username](#input\_username) | workspace username | `any` | n/a | yes |
+| <a name="input_bundle_id"></a> [bundle\_id](#input\_bundle\_id) | ID of the bundle to deploy workspaces as | `string` | `""` | yes |
+| <a name="input_directory_name"></a> [directory\_name](#input\_directory\_name) | Active directory name | `string` | `""` | yes |
+| <a name="input_password"></a> [password](#input\_password) | Active directory password | `string` | `""` | yes |
+| <a name="input_username"></a> [username](#input\_username) | workspace username | `string` | `""` | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_workspace-directory-customer-name"></a> [workspace-directory-customer-name](#output\_workspace-directory-customer-name) | n/a |
-| <a name="output_workspace-directory-name"></a> [workspace-directory-name](#output\_workspace-directory-name) | n/a |
-| <a name="output_workspace-id"></a> [workspace-id](#output\_workspace-id) | n/a |
-| <a name="output_workspace-name"></a> [workspace-name](#output\_workspace-name) | n/a |
+| <a name="output_workspace-directory-customer-name"></a> [workspace-directory-customer-name](#output\_workspace-directory-customer-name) | The user name for the service account. |
+| <a name="output_workspace-directory-name"></a> [workspace-directory-name](#output\_workspace-directory-name) | The name of the directory. |
+| <a name="output_workspace-id"></a> [workspace-id](#output\_workspace-id) | The workspaces ID. |
+| <a name="output_workspace-name"></a> [workspace-name](#output\_workspace-name) | The name of the WorkSpace, as seen by the operating system. |
+
+For more information on Amazon Workspaces Manual Setup, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
+
+For more information on Amazon Workspaces, visit [Amazon Workspaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html).
+
+For more information on Terraform AWS Workspaces, visit [Terraform Resource: AWS Workspaces](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/workspaces_workspace).
