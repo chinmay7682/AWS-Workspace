@@ -43,7 +43,12 @@ resource "aws_route_table_association" "private2" {
   route_table_id = aws_route_table.private.id
 }
 
+resource "aws_eip" "workspace-nat" {
+  vpc      = true
+}
+
 resource "aws_nat_gateway" "workspace" {
+  allocation_id = aws_eip.workspace-nat.id
   subnet_id = aws_subnet.public1.id
 
   tags = {
