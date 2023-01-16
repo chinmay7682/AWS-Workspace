@@ -40,8 +40,6 @@ ___
 
 <pre><code>terraform apply</pre></code>
 
-
-
 * To destroy the infrastructure created before by using Terraform:
 
 <pre><code>terraform destroy</pre></code>
@@ -67,6 +65,9 @@ ___
 <img width="323" alt="image" src="https://user-images.githubusercontent.com/65828245/212688201-1bb460d1-88a3-4afd-b80a-4a13ba5bf8db.png">
 <img width="482" alt="image" src="https://user-images.githubusercontent.com/65828245/212688283-3ca8f68d-9671-4caf-8d6f-719556d7d647.png">
 
+Now re-run terraform apply again to complete the workspace setup.
+
+<img width="488" alt="image" src="https://user-images.githubusercontent.com/65828245/212745988-bdd74a99-2091-4cf4-a795-a34f694c546d.png">
 
 ## Requirements
 
