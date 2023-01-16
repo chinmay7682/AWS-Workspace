@@ -46,6 +46,24 @@ ___
 
 <pre><code>terraform destroy</pre></code>
 
+## Add user to Simple Active Directory Created before
+1. Launch an Windows EC2 Instance and Install Active Directory [administration tools](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_install_ad_tools.html)
+
+<img width="783" alt="image" src="https://user-images.githubusercontent.com/65828245/212678655-efde5f62-498a-4b0e-8669-75eb79e6c87c.png">
+
+2. Join the Ec2 Instance to Simple AD domain by following [this](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_join_windows_instance.html) document.
+ 
+ <img width="296" alt="image" src="https://user-images.githubusercontent.com/65828245/212684842-2857e0b6-54be-4beb-9d61-b753091da107.png">
+<img width="538" alt="image" src="https://user-images.githubusercontent.com/65828245/212685308-52f7234d-7b08-4039-aa3b-bcfbdee7f06d.png">
+
+ 
+ <img width="305" alt="image" src="https://user-images.githubusercontent.com/65828245/212681557-681ee50e-1ea8-4e30-ba46-49fc67f93f36.png">
+
+3. Create a User by following [this](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/simple_ad_manage_users_groups_create_user.html) document
+ Open the Active Directory Users and Computers tool. Run as a different user. Put the Active directory userid and password.
+ <img width="339" alt="image" src="https://user-images.githubusercontent.com/65828245/212684126-a5f615e7-6352-425a-b8f9-48c63b841560.png">
+
+
 ## Requirements
 
 | Name | Version |
