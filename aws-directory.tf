@@ -13,8 +13,8 @@ resource "aws_directory_service_directory" "simple" {
   }
 
   depends_on = [
-   aws_vpc.workspace,
-   aws_subnet.private1,
-   aws_subnet.private2
+    aws_vpc.workspace,
+    aws_subnet.private1,
+    aws_subnet.private2
   ]
 }

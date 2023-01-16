@@ -29,9 +29,9 @@ resource "aws_workspaces_directory" "workspaces-directory" {
     user_enabled_as_local_administrator = true
   }
   depends_on = [
-   aws_iam_role.workspaces-default,
-   aws_directory_service_directory.simple,
-   aws_subnet.private1,
-   aws_subnet.private2
+    aws_iam_role.workspaces-default,
+    aws_directory_service_directory.simple,
+    aws_subnet.private1,
+    aws_subnet.private2
   ]
 }
