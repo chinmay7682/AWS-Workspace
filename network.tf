@@ -3,21 +3,21 @@ resource "aws_vpc" "workspace" {
 }
 
 resource "aws_subnet" "private1" {
-  vpc_id            = aws_vpc.workspace.id
+  vpc_id               = aws_vpc.workspace.id
   availability_zone_id = "use1-az2"
-  cidr_block        = "10.20.1.0/24"
+  cidr_block           = "10.20.1.0/24"
 }
 
 resource "aws_subnet" "private2" {
-  vpc_id            = aws_vpc.workspace.id
+  vpc_id               = aws_vpc.workspace.id
   availability_zone_id = "use1-az4"
-  cidr_block        = "10.20.2.0/24"
+  cidr_block           = "10.20.2.0/24"
 }
 
 resource "aws_subnet" "public1" {
-  vpc_id            = aws_vpc.workspace.id
+  vpc_id               = aws_vpc.workspace.id
   availability_zone_id = "use1-az4"
-  cidr_block        = "10.20.3.0/24"
+  cidr_block           = "10.20.3.0/24"
 }
 
 resource "aws_route_table" "private" {
@@ -44,7 +44,7 @@ resource "aws_route_table_association" "private2" {
 }
 
 resource "aws_nat_gateway" "workspace" {
-  subnet_id     = aws_subnet.public1.id
+  subnet_id = aws_subnet.public1.id
 
   tags = {
     Name = "gw NAT"
